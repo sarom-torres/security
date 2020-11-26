@@ -56,3 +56,9 @@ O seguinte comando irá criar uma KeyStore com extensão `.pkcs12` e exportará 
 
 `openssl pkcs12 -export -in lased.pem -out keystore.pkcs12`
 
+### Conteúdo da KeyStore
+
+O seguinte comando irá mostrar o conteúdo da KeyStore
+
+`keytool -v -list -keystore keystore.pkcs12`
+
