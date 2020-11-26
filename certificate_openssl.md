@@ -4,7 +4,7 @@
 
 ### Gerando chave privada 
 
-O seguinte comando irá gerar uma chave RSA de 104 bits em um arquivo `.key`.
+O seguinte comando irá gerar uma chave RSA de 1024 bits em um arquivo `.key`.
 O comandao `-des3` irá solicitar uma senha para a chave privada, caso não queria protejar a chave privada com senha basta remover o comando.
 
 
