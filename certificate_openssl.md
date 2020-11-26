@@ -5,7 +5,7 @@
 ### Gerando chave privada 
 
 O seguinte comando irá gerar uma chave RSA de 1024 bits em um arquivo `.key`.
-O comandao `-des3` irá solicitar uma senha para a chave privada, caso não queria protejar a chave privada com senha basta remover o comando.
+O comando `-des3` irá solicitar uma senha para a chave privada, caso não queria proteger a chave privada com senha basta remover o comando.
 
 
 `openssl genrsa -des3 -out lased.key 1024`
