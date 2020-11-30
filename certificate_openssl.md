@@ -14,7 +14,7 @@ O comando `-des3` irá solicitar uma senha para a chave privada, caso não queri
 O seguinte comando irá gerar um certificado CSR (Certificate Signing Request), contendo a chave privada gerada anteriormente e com os dados de entrada do comando `-subj`.
 
 ```
-openssl req -new -key lased.key -out lased.csr -subj "/C=BR/ST=Santa Catarina/L=Sao Jose/O=IFSC/CN=ModeloArev1:XXXXXXXXYYYYZZ/" -config config.cnf
+openssl req -new -key lased.key -out lased.csr -subj "/C=BR/ST=Santa Catarina/L=Sao Jose/O=IFSC/CN=ModeloArev1:XXXXXXXXYYYYZZ/" -config config.conf
 ```
 
 O parâmetro `-config` receberá um arquivo de configuração com a extensão `.conf` contendo o OID e o valor associado ao identificador.
