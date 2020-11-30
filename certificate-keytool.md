@@ -5,7 +5,7 @@
 Criando um certificado auto-assinado e o armazenando na KeyStore
 
 ```
-keytool -genkeypair -alias ALIAS_NAME -keyalg RSA -validity #_OF_DAYS -keysize 1024 -keystore KEYSTORE_NAME.pkcs
+keytool -genkeypair -alias ALIAS_NAME -keyalg RSA -validity #_OF_DAYS -keysize 1024 -keystore KEYSTORE_NAME.jks
 ```
 
 * **ALIAS_NAME**: nome do alias do certificado.
@@ -18,9 +18,9 @@ keytool -genkeypair -alias ALIAS_NAME -keyalg RSA -validity #_OF_DAYS -keysize 1
 
 ### Formato da Keystore
 
-Caso a Keystore esteja em outro formato pode ser necessário mudar o tipo de armazenamento da keystore para `pkcs12`
+Caso a Keystore esteja em formato `.jks` pode ser necessário mudar o tipo de armazenamento da keystore para `pkcs12`
 ```
-keytool -importkeystore -srckeystore KEYSTORE_NAME.pkcs -destkeystore KEYSTORE_NAME.pkcs -deststoretype pkcs12
+keytool -importkeystore -srckeystore KEYSTORE_NAME.jks -destkeystore KEYSTORE_NAME.pkcs12 -deststoretype pkcs12
 ```
 
 * **KEYSTORE_NAME**: Caminho/nome do arquivo keystore.
