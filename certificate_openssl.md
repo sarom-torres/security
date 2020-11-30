@@ -40,7 +40,7 @@ O resultado do seguinte comando será um arquivo `.csr`.
 O comando abaixo irá gerar um certificado X509 auto-assinado. Neste caso deverá ser passado como parâmetro o arquivo `.csr`, a chave privada `.key` e o arquivo de configuração `.conf`.
 
 ```
-openssl x509 -req -days 365 -in lased.csr -signkey lased.key -out lased.cert -extfile config.cnf -extensions v3_req
+openssl x509 -req -days 365 -in lased.csr -signkey lased.key -out lased.cert -extfile config.conf -extensions v3_req
 ```
 O resultado do comando será um arquivo `.cert`.
 
