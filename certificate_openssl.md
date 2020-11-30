@@ -31,7 +31,7 @@ distinguished_name = req_distinguished_name
 subjectAltName=@subject_alt_section
 
 [subject_alt_section]
-otherName=2.16.76.1.3.1;UTF8:61585866000104
+otherName=2.16.76.1.3.1;UTF8String:61585866000104
 ```
 O resultado do seguinte comando será um arquivo `.csr`.
 
