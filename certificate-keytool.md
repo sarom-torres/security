@@ -37,3 +37,12 @@ keytool -export -alias ALIAS_NAME -keystore KEYSTORE_NAME.pkcs -rfc -file CERTIF
 * **KEYSTORE_NAME**: Caminho/nome do arquivo keystore.
 
 * **CERTIFICATE_NAME**: Caminho/nome do arquivo certificado.
+
+### Mostrando certificado
+
+Para mostrar em tela o certificado
+
+```
+keytool -printcert -v -file CERTIFICATE_NAME.crt
+```
+* **CERTIFICATE_NAME**: Caminho/nome do arquivo certificado.
